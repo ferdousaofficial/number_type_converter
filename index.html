@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number type converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form onsubmit="numberTypeConverter(); return false">
+        <h2 class="heading">Number Converter</h2>
+        <div class="numberType">
+          <select name="firstType" id="firstType" class="type">
+            <option value="decimal">Decimal</option>
+            <option value="binary">Binary</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+          </select>
+          <select id="secondType" name="secondType" class="type">
+            <option value="binary">Binary</option>
+            <option value="decimal">Decimal</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+          </select>
+        </div>
+        <div class="number">
+          <span>Enter the number</span>
+          <input type="text" id="number" name="number" class="input-style" />
+        </div>
+        <div class="btns">
+          <button type="submit" class="btn">convert</button>
+          <button type="button" id="reset" class="btn">reset</button>
+        </div>
+        <div class="result">
+          <span>Here's the result</span
+          ><input type="text" class="input-style" id="result" readonly />
+        </div>
+      </form>
+    </main>
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
